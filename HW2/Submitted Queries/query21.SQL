@@ -1,0 +1,1 @@
+select name, ssn from passenger where not exists(select * from (reservation join departure on reservation.code = departure.code) where busnbr = 'ABC123' or busnbr = 'XYZ123');

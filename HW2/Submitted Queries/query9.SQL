@@ -1,0 +1,1 @@
+select departure.busnbr, sum(tripinfo.tripmiles) as miles from departure, tripinfo where departure.code = tripinfo.code group by departure.busnbr;

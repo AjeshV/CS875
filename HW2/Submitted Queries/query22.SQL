@@ -1,0 +1,1 @@
+select ssn, name, earnedmiles from passenger having earnedmiles > 0;

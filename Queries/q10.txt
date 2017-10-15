@@ -1,0 +1,5 @@
+\project_(Fname,Lname,Salary) (Employee)
+\diff
+\project_(Fname,Lname,Salary)
+   \rename (sal, \project_{salary}Employee)
+   \join_{sal > salary}

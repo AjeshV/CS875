@@ -1,0 +1,1 @@
+select passenger.name from passenger, schedule, tripinfo where passenger.ssn=schedule.ssn AND schedule.code=tripinfo.code AND tripinfo.company='peterpan' AND schedule.date='2017-05-19';

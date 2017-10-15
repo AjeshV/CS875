@@ -1,0 +1,1 @@
+select name,sum(tripmiles) from ((crew left join schedule on crew.ssn = schedule.ssn) left join tripinfo on tripinfo.code = schedule.code) where job = 'driver';

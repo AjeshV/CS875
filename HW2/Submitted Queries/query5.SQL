@@ -1,0 +1,1 @@
+select job, avg(salary), sum(salary), min(salary), max(salary) from crew group by job;

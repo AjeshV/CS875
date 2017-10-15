@@ -1,0 +1,1 @@
+select passenger.ssn, passenger.name, sum(passenger.earnedmiles) + tripinfo.tripmiles as totaltripmiles from(passenger join reservation on passenger.ssn = reservation.ssn)join tripinfo on reservation.code = tripinfo.code where not exists (select * from crew where crew.ssn = passenger.ssn) group by passenger.ssn;

@@ -1,0 +1,1 @@
+select tripinfo.company, sum(k.tripmiles) as miles from tripinfo left join (select tripinfo.tripmiles, tripinfo.code, departure.date from tripinfo natural join departure where date like '2017-05-%') k on tripinfo.code = k.code group by tripinfo.company;

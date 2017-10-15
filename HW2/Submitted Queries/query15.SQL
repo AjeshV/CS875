@@ -1,0 +1,1 @@
+select * from passenger p JOIN reservation r JOIN departure d where p.ssn = r.ssn and r.code = d.code and p.ssn not in (select ssn from crew);
