@@ -1,1 +1,1 @@
-# CS875
+# CS875 Database Systems
