@@ -1,1 +1,0 @@
-select k.company, k.tripnbr, k.segnbr, k.date from (select tripinfo.company, tripinfo.tripnbr, tripinfo.segnbr, reservation.date, reservation.ssn FROM tripinfo inner join reservation on tripinfo.code = reservation.code) k inner join crew on k.ssn = crew.ssn;

@@ -1,1 +1,0 @@
-select crew.ssn, crew.name from crew natural join schedule where schedule.code in (select departure.code from departure, passenger, crew c1, reservation where c1.ssn = passenger.ssn and schedule.date <> departure.date and reservation.ssn = passenger.ssn and reservation.code = departure.code);

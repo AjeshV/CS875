@@ -1,1 +1,0 @@
-select passenger.name, passenger.ssn from passenger inner join (select reservation.ssn, reservation.code from reservation inner join departure on reservation.code = departure.code and departure.busnbr = 'ABC123') k on passenger.ssn = k.ssn;

@@ -1,1 +1,0 @@
-select distinct P.Pname from PROJECT P, PROJECT L WHERE P.Plocation= L.Plocation and P.Pname != L.Pname;

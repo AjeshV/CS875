@@ -1,1 +1,0 @@
-select d.code, d.date, k.ssn, k.name from departure d left join (select * from crew c natural join schedule s) k on d.code = k.code and d.date = k.date;

@@ -1,1 +1,0 @@
-select t.company, t.tripnbr, t.segnbr, t.origin, t.destination, t.duration, t.tripmiles from tripinfo t join (select destination from tripinfo) k where t.origin = k.destination and t.destination = 'miami';

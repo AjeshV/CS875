@@ -1,1 +1,0 @@
-\project_{pno} ((\select_{lname = 'Smith'} Employee) \join_{Ssn = Essn} works_on);

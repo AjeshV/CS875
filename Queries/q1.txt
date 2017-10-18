@@ -1,3 +1,0 @@
-\project_{Fname, Lname} ((\project_{Fname, Lname, Ssn} \select_{Sex='M'}Employee)
-\join_{Essn=Ssn}(\project_{Dependent_name,Essn} \select_{Sex='F'}Dependent));
-

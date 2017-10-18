@@ -1,1 +1,0 @@
-select crew.ssn, crew.name, k.code, k.date from crew left join (select * from passenger natural join reservation) k on crew.ssn=k.ssn order by crew.name;
